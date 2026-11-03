@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba do navegador conforme especificação -->
+    <title>Meus sites favoritos</title>
+    
+    <!-- Estilização CSS para organização visual da página -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Título do corpo da página com destaque */
+        .main-title {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        /* Container principal dos cartões de sites */
+        .sites-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1200px;
+        }
+
+        /* Cartão individual para cada site */
+        .site-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .site-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Título do site individual acima da imagem */
+        .site-title {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* Imagem do site */
+        .site-image {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            margin-bottom: 15px;
+        }
+
+        /* Link abaixo da imagem */
+        .site-link {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+
+        .site-link:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título principal no corpo da página com seu nome -->
+    <h1 class="main-title">Meus sites favoritos: Eduardo</h1>
+
+    <div class="sites-container">
+
+        <!-- Site 1: GitHub -->
+        <div class="site-card">
+            <!-- Nome acima da imagem -->
+            <h2 class="site-title">GitHub</h2>
+            <!-- Imagem do site (com link funcional opcional na imagem) -->
+            <a href="https://github.com" target="_blank">
+                <img src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="GitHub Logo" class="site-image">
+            </a>
+            <!-- Link abaixo da imagem -->
+            <a href="https://github.com" target="_blank" class="site-link">Acessar o GitHub</a>
+        </div>
+
+        <!-- Site 2: W3Schools -->
+        <div class="site-card">
+            <h2 class="site-title">W3Schools</h2>
+            <a href="https://www.w3schools.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/W3Schools_logo.svg" alt="W3Schools Logo" class="site-image">
+            </a>
+            <a href="https://www.w3schools.com" target="_blank" class="site-link">Acessar o W3Schools</a>
+        </div>
+
+        <!-- Site 3: YouTube -->
+        <div class="site-card">
+            <h2 class="site-title">YouTube</h2>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="site-image">
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="site-link">Acessar o YouTube</a>
+        </div>
+
+        <!-- Site 4: Stack Overflow -->
+        <div class="site-card">
+            <h2 class="site-title">Stack Overflow</h2>
+            <a href="https://stackoverflow.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Stack_Overflow_icon.svg" alt="Stack Overflow Logo" class="site-image">
+            </a>
+            <a href="https://stackoverflow.com" target="_blank" class="site-link">Acessar o Stack Overflow</a>
+        </div>
+
+        <!-- Site 5: MDN Web Docs -->
+        <div class="site-card">
+            <h2 class="site-title">MDN Web Docs</h2>
+            <a href="https://developer.mozilla.org" target="_blank">
+                <img src="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png" alt="MDN Web Docs Logo" class="site-image">
+            </a>
+            <a href="https://developer.mozilla.org" target="_blank" class="site-link">Acessar o MDN Docs</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
